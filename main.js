@@ -1,3 +1,9 @@
+// Author: Steven Rugg
+// Animated Animals
+// © Merlin Media LLC 2022
+
+
+
 const cat = [
   {
     x1: 262.28254,
