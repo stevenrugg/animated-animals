@@ -1,6 +1,7 @@
-// Author: Steven Rugg
-// Animated Animals
-// © Merlin Media LLC 2022
+/* Author: Steven Rugg
+   Animated Animals
+   © Merlin Media LLC 2022
+*/
 
 
 
