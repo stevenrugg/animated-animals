@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+svg {
+  height: 100vmin;
+  left: calc(50% - 50vmin);
+  position: absolute;
+  width: 100vmin;
+  border: 3px solid blueviolet;
+  box-shadow: 2px black;
+}
+content {
+  background-color: lightblue;
+}
