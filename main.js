@@ -5321,6 +5321,8 @@ const wolf = [
   },
 ];
 
+/* Shuffle Function */
+
 function shuffle(a) {
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -5328,6 +5330,8 @@ function shuffle(a) {
   }
   return a;
 }
+
+/* Convert SVG segments to paths for map and filter */
 
 const svg = document.querySelector('svg');
 const paths = [];
@@ -5341,8 +5345,10 @@ cat.forEach((item, i) => {
   paths.push(path);
 })
 
+/* Helper Functions and Variables */
+
 let start = null;
-const duration = 850;
+const duration = 1050;
 
 function linear(t) { return t; }
 function cubic(t) { return t * t * t; }
@@ -5352,7 +5358,7 @@ function elastic(t, coeff) {
 }
 
 function interpolate(v1, v2, progress, duration, easing, coeff) {
-  return v1 + (v2 - v1) * easing(progress / duration, coeff);
+  return v1 + (v2 - v1) * easing(progress / duration, coeff + 1);
 }
 
 function componentToHex(color) {
@@ -5363,6 +5369,8 @@ function componentToHex(color) {
 function rgbToHex(r, g, b) {
   return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 }
+
+/* Animation Function */
 
 function animate(animal) {
   start = null;
@@ -5404,6 +5412,8 @@ function animate(animal) {
     }
   })
 }
+
+/* Construct Animals */
 
 const animals = [bear, deer, cat, wolf];
 let index = 0, animal = bear, prevAnimal = cat;
